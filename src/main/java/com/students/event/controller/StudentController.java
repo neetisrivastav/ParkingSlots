@@ -29,7 +29,7 @@ public class StudentController {
 		return studentService.getAllStudents();
 	}
 
-	@GetMapping("/delete-students/{id}")
+	@PostMapping("/delete-students/{id}")
 	public String deleteStudent(@PathVariable Long id) {
 		studentService.deleteStudentById(id);
 		return "deleted successfully";
