@@ -1,11 +1,12 @@
-package com.students.event.service;
+package com.students.event.serviceimpl;
 
 import java.util.List;
 
+import com.students.event.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.students.event.model.Students;
+import com.students.event.studentModel.Students;
 import com.students.event.repository.StudentRepository;
 
 @Service

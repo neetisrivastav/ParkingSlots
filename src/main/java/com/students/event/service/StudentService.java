@@ -2,7 +2,7 @@ package com.students.event.service;
 
 import java.util.List;
 
-import com.students.event.model.Students;
+import com.students.event.studentModel.Students;
 
 
 public interface StudentService {

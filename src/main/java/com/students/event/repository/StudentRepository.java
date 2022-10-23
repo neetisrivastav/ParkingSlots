@@ -1,6 +1,6 @@
 package com.students.event.repository;
 
-import com.students.event.model.Students;
+import com.students.event.studentModel.Students;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

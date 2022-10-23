@@ -1,4 +1,4 @@
-package com.students.event.model;
+package com.students.event.studentModel;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
