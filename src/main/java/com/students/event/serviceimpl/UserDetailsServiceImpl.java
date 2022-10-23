@@ -1,7 +1,7 @@
 package com.students.event.serviceimpl;
 
-import com.students.event.studentModel.User;
 import com.students.event.repository.UserRepository;
+import com.students.event.studentModel.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

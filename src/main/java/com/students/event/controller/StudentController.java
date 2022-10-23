@@ -1,13 +1,12 @@
 package com.students.event.controller;
 
-import com.students.event.studentModel.User;
 import com.students.event.repository.UserRepository;
+import com.students.event.service.StudentService;
+import com.students.event.studentModel.Students;
+import com.students.event.studentModel.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
-import com.students.event.studentModel.Students;
-import com.students.event.service.StudentService;
 
 import java.util.List;
 

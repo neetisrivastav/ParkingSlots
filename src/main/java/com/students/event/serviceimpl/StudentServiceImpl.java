@@ -1,13 +1,12 @@
 package com.students.event.serviceimpl;
 
-import java.util.List;
-
+import com.students.event.repository.StudentRepository;
 import com.students.event.service.StudentService;
+import com.students.event.studentModel.Students;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.students.event.studentModel.Students;
-import com.students.event.repository.StudentRepository;
+import java.util.List;
 
 @Service
 public class StudentServiceImpl implements StudentService {

@@ -2,13 +2,8 @@ package com.students.event.controller;
 
 import com.students.event.buildingModel.Floor;
 import com.students.event.buildingModel.ParkingSlot;
-import com.students.event.repository.FloorRepository;
-import com.students.event.repository.ParkingSlotRepository;
-import com.students.event.repository.UserRepository;
 import com.students.event.service.FloorService;
 import com.students.event.service.ParkingSlotService;
-import com.students.event.service.StudentService;
-import com.students.event.studentModel.Students;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,9 +1,9 @@
 package com.students.event.serviceimpl;
 
-import java.util.Collection;
-
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.Collection;
 
 public class UserPrincipal implements UserDetails {
 

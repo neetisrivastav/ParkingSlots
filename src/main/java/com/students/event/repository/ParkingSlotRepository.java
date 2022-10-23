@@ -1,6 +1,5 @@
 package com.students.event.repository;
 
-import com.students.event.buildingModel.Floor;
 import com.students.event.buildingModel.ParkingSlot;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
