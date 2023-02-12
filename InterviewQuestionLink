@@ -10,9 +10,12 @@ Java 8: https://www.interviewbit.com/java-8-interview-questions/
 Java 8: https://blog.devgenius.io/15-practical-exercises-help-you-master-java-stream-api-3f9c86b1cf82
 Java design pattern: https://www.javatpoint.com/design-patterns-in-java
 
+Java Memory Management: https://dzone.com/articles/java-memory-management
+
 https://stackoverflow.com/questions/2801878/implementing-two-interfaces-in-a-class-with-same-method-which-interface-method
 
 Hibernate:  https://www.interviewbit.com/hibernate-interview-questions/
+ORM: Eager and lazy concept
 
 AWS: lambda,SQS, SNS, ECS, VPC, EC2, load balancer, autoscaling, cloud watch, parameter store, Api gateway, oath 2 for cognate user pool.
 https://www.interviewbit.com/aws-interview-questions/
@@ -107,6 +110,8 @@ https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-
 https://www.geeksforgeeks.org/java-program-for-rotating-a-linked-list/
 https://www.geeksforgeeks.org/decode-string-recursively-encoded-count-followed-substring/
 https://www.geeksforgeeks.org/find-the-number-of-islands-using-dfs/
+https://www.geeksforgeeks.org/sorting-larger-file-with-smaller-ram/
+https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
 
 Design Pattern
 
