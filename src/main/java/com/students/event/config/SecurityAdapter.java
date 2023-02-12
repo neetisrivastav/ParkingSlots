@@ -1,5 +1,6 @@
 package com.students.event.config;
 
+import com.students.event.serviceimpl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 @EnableWebSecurity
 public class SecurityAdapter extends WebSecurityConfigurerAdapter {
         @Autowired
-        private UserDetailsService userDetailsService;
+        private UserDetailsServiceImpl userDetailsServiceImpl;
         @Bean
         public JwtAuthenticationFilter jwtAuthenticationFilter() {
             return new JwtAuthenticationFilter();
@@ -36,7 +37,7 @@ public class SecurityAdapter extends WebSecurityConfigurerAdapter {
         }
         @Override
         protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-            auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+            auth.userDetailsService(userDetailsServiceImpl).passwordEncoder(passwordEncoder());
         }
         @Override
         protected void configure(HttpSecurity http) throws Exception {
@@ -46,7 +47,9 @@ public class SecurityAdapter extends WebSecurityConfigurerAdapter {
                     .csrf().disable()
                     .authorizeRequests()
                     .antMatchers("/auth/**").permitAll()
-                    .antMatchers("/user/**").authenticated()
+                    .antMatchers("/user/students").hasRole("ADMIN")
+//                    .antMatchers("/user/save-update-students").hasRole("USER")
+                    .antMatchers("/user/save-update-students").hasAuthority("LISTINGSLOTS")
                     .and()
                     .exceptionHandling()
                     .authenticationEntryPoint((req, res, ex) -> res.sendError(HttpServletResponse.SC_UNAUTHORIZED, "UNAUTHORIZED : " + ex.getMessage()))

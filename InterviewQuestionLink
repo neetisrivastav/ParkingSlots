@@ -1,0 +1,110 @@
+Leet code problems: https://seanprashad.com/leetcode-patterns/
+Spring security: done
+Spring cloud: watch udemy lector’s (declarative client)
+Web Reactive interaction: need
+Kafka:  overview and basic idea about it
+Java 8: watch video: https://www.youtube.com/watch?v=k7fNLXoVCYg
+Java 8: https://mkyong.com/category/java8/
+Java 8: https://www.interviewbit.com/java-8-interview-questions/
+Java 8: https://blog.devgenius.io/15-practical-exercises-help-you-master-java-stream-api-3f9c86b1cf82
+Java design pattern: https://www.javatpoint.com/design-patterns-in-java
+
+
+Hibernate:  https://www.interviewbit.com/hibernate-interview-questions/
+
+AWS: lambda,SQS, SNS, ECS, VPC, EC2, load balancer, autoscaling, cloud watch, parameter store, Api gateway, oath 2 for cognate user pool.
+https://www.interviewbit.com/aws-interview-questions/
+
+
+Junit, mockito, powermockito.
+
+ACID property : https://www.geeksforgeeks.org/acid-properties-in-dbms/
+
+Spring based interview question, gradle vs maven
+https://www.interviewbit.com/spring-interview-questions/
+https://www.edureka.co/blog/interview-questions/spring-interview-questions/
+
+CAP theorem: https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/
+
+SOLID principle:
+
+Error handling in micro services: https://javatodev.com/microservices-exception-handling/
+
+Debug issue in micro services arch
+
+Microservice design pattern
+
+Internal working of dependency injection
+
+Imp feature after java 8 that developer should know: https://www.youtube.com/watch?v=P7SI9mLwiqw
+
+Most challenging work in recent 3-4 months: node js, typescript and shell scripting
+
+Core java:
+
+Multithreading(producer consumer problem, class lock and object lock, thread pool, phaser, countdown latch, cyclic barrier, Exchager, semaphore, synchronous queue, race condition
+
+https://www.interviewbit.com/multithreading-interview-questions/
+https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-questions-answers.html#axzz7iZBOzDUg
+
+Collection:
+https://medium.com/art-of-coding/hash-table-vs-concurrent-hashmap-and-its-internal-working-b28fc2725bdb
+https://www.interviewbit.com/java-collections-interview-questions/
+https://www.edureka.co/blog/interview-questions/java-collections-interview-questions/
+https://itsromiljain.medium.com/curious-case-of-concurrenthashmap-90249632d335
+
+Exception
+File handling—>nio package overview
+
+Diff between npm and nix
+
+Code need to practice
+
+1. Deadlock code
+2. Produce and consumer code
+3. Mirror image of tree
+4. Syncrhronisation using three thread (1 to 100)
+
+SQL Based Question:
+
+join query
+nth highest salary
+index pros cons
+database sharding
+
+Perfgo equal to meter
+Grafana : cpu utilisation or monitoring tool
+Prometheus:
+Healm : install, upgrade
+kubernates
+Docker
+Elastic search
+Solaris
+Mongo db
+Rancher
+Logs
+Dynatrace
+Swagger code gen
+Kotlin
+Appinshits
+Wikipage
+Alfred
+
+
+https://www.linkedin.com/posts/ankit5999_interviewquestions-interviews-leetcode-activity-7000755393215803393-H7MR?utm_source=share&utm_medium=member_android
+
+Misc Code:
+
+https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+https://www.geeksforgeeks.org/count-of-days-remaining-for-the-next-day-with-higher-temperature/
+https://www.geeksforgeeks.org/stock-buy-sell/
+https://www.geeksforgeeks.org/longest-palindrome-substring-set-1/amp/
+https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/
+https://www.geeksforgeeks.org/java-program-for-rotating-a-linked-list/
+https://www.geeksforgeeks.org/decode-string-recursively-encoded-count-followed-substring/
+https://www.geeksforgeeks.org/find-the-number-of-islands-using-dfs/
+
+Design Pattern
+
+https://medium.com/@abhigulve06/lld-of-the-snake-and-ladder-game-3fd9f47cdd3a
+https://medium.com/geekculture/system-design-elevator-system-design-interview-question-6e8d03ce1b44
