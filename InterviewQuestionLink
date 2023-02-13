@@ -12,6 +12,11 @@ Java design pattern: https://www.javatpoint.com/design-patterns-in-java
 
 Java Memory Management: https://dzone.com/articles/java-memory-management
 
+Comparable and Comparator: https://www.guru99.com/comparable-vs-comparator-java.html
+
+How to prevent Singleton Pattern from Reflection, Serialization and Cloning?
+https://www.geeksforgeeks.org/prevent-singleton-pattern-reflection-serialization-cloning/
+
 https://stackoverflow.com/questions/2801878/implementing-two-interfaces-in-a-class-with-same-method-which-interface-method
 
 Hibernate:  https://www.interviewbit.com/hibernate-interview-questions/
@@ -113,7 +118,16 @@ https://www.geeksforgeeks.org/find-the-number-of-islands-using-dfs/
 https://www.geeksforgeeks.org/sorting-larger-file-with-smaller-ram/
 https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
 
-Design Pattern
+System Design
 
 https://medium.com/@abhigulve06/lld-of-the-snake-and-ladder-game-3fd9f47cdd3a
-https://medium.com/geekculture/system-design-elevator-system-design-interview-question-6e8d03ce1b44
+https://medium.com/geekculture/system-design-elevator-system-design-interview-question-
+https://youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
+
+
+Leetcode question
+
+https://seanprashad.com/leetcode-patterns/
+https://leetcode.com/problem-list/top-100-liked-questions/
+https://leetcode.com/problem-list/top-interview-questions/
+https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
