@@ -24,17 +24,31 @@ public class HighestPaidSalary {
         ).collect(Collectors.toList());
 
         Comparator<Employee> compareBySalary = Comparator.comparing(Employee::getSalary);
-       // System.out.println(compareBySalary);
+      // System.out.println(compareBySalary);
         Map<String, Optional<Employee>> collect = employee.stream().collect(groupingBy(Employee::getDepartment, Collectors.reducing(BinaryOperator.maxBy(compareBySalary))));
+        System.out.println(collect);
 
         //second approach
-        Map<String, Employee> collect1 = employee.stream().collect(groupingBy(Employee::getDepartment, collectingAndThen(
-                maxBy(Comparator.comparingDouble(Employee::getSalary)), Optional::get)));
-        //        Map<String, Optional<Employee>> finalMap = new LinkedHashMap<>();
-//        collect.entrySet().stream().sorted()
-//                .forEachOrdered(e -> finalMap.put(e.getKey(), e.getValue()));
-        System.out.println(collect);
-        //System.out.println(collect1);
+//        Map<String, Employee> collect1 = employee.stream().collect(groupingBy(Employee::getDepartment, collectingAndThen(
+//                maxBy(Comparator.comparingDouble(Employee::getSalary)), Optional::get)));
+//               Map<String, Optional<Employee>> finalMap = new LinkedHashMap<>();
+//       collect.entrySet().stream().sorted()
+//              .forEachOrdered(e -> finalMap.put(e.getKey(), e.getValue()));
+//        System.out.println(collect);
+
+
+       List<Integer> collect2 = employee.stream().filter(e->e.getEmployeeName()=="Neeti").map(Employee::getSalary).toList();
+       System.out.println(collect2);
+
+        Map<String, Set<Integer>> result =
+                employee.stream().filter(e->e.getEmployeeName()=="Neeti").collect(
+                        Collectors.groupingBy(Employee::getEmployeeName,
+                                Collectors.mapping(Employee::getSalary, Collectors.toSet())
+                        )
+                );
+
+
+        System.out.println(result);
     }
 }
 class Employee

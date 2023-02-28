@@ -8,7 +8,9 @@ Java 8: watch video: https://www.youtube.com/watch?v=k7fNLXoVCYg
 Java 8: https://mkyong.com/category/java8/
 Java 8: https://www.interviewbit.com/java-8-interview-questions/
 Java 8: https://blog.devgenius.io/15-practical-exercises-help-you-master-java-stream-api-3f9c86b1cf82
-Java design pattern: https://www.javatpoint.com/design-patterns-in-java
+
+Java design pattern:
+https://www.digitalocean.com/community/tutorials/java-design-patterns-example-tutorial
 
 Java Memory Management: https://dzone.com/articles/java-memory-management
 
@@ -44,6 +46,7 @@ Debug issue in micro services arch
 https://javatodev-501aa8.ingress-comporellon.ewp.live/microservices-exception-handling/
 
 Microservice design pattern
+https://www.edureka.co/blog/microservices-design-patterns
 
 Internal working of dependency injection
 https://blogs.sap.com/2016/08/11/how-does-autowired-work-in-spring-framework/
@@ -52,7 +55,15 @@ Imp feature after java 8 that developer should know: https://www.youtube.com/wat
 
 Most challenging work in recent 3-4 months: node js, typescript and shell scripting
 
+Java : Build your Own Custom ExecutorService(ThreadPool):
+https://medium.com/@itsmynameangad/java-build-your-own-custom-executorservice-threadpool-213e46159326
+
 Core java:
+
+
+The method intern() creates an exact copy of a String object in the heap memory and
+stores it in the String constant pool. Note that, if another String with the same contents exists in the
+String constant pool, then a new object won't be created and the new reference will point to the other String.
 
 Multithreading(producer consumer problem, class lock and object lock, thread pool, phaser, countdown latch, cyclic barrier, Exchager, semaphore, synchronous queue, race condition
 
@@ -79,6 +90,8 @@ Code need to practice
 
 SQL Based Question:
 
+https://www.geeksforgeeks.org/find-nth-highest-salary-table/
+https://www.edureka.co/blog/interview-questions/sql-query-interview-questions
 join query
 nth highest salary
 index pros cons
@@ -111,7 +124,7 @@ https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
 https://www.geeksforgeeks.org/count-of-days-remaining-for-the-next-day-with-higher-temperature/
 https://www.geeksforgeeks.org/stock-buy-sell/
 https://www.geeksforgeeks.org/longest-palindrome-substring-set-1/amp/
-https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/
+https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/  : done
 https://www.geeksforgeeks.org/java-program-for-rotating-a-linked-list/
 https://www.geeksforgeeks.org/decode-string-recursively-encoded-count-followed-substring/
 https://www.geeksforgeeks.org/find-the-number-of-islands-using-dfs/
@@ -120,9 +133,15 @@ https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-g
 
 System Design
 
+https://medium.com/javarevisited/25-software-design-interview-questions-to-crack-any-programming-and-technical-interviews-4b8237942db0
 https://medium.com/@abhigulve06/lld-of-the-snake-and-ladder-game-3fd9f47cdd3a
-https://medium.com/geekculture/system-design-elevator-system-design-interview-question-
+https://medium.com/geekculture/system-design-elevator-system-design-interview-question-6e8d03ce1b44
 https://youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
+Elevator
+Parking lot
+Snake ladder game
+Chess game
+long URL to short URL
 
 
 Leetcode question

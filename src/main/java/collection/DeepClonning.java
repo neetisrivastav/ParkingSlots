@@ -25,16 +25,16 @@ public class DeepClonning {
         // creating copy of Collection using copy constructor
         Collection<Employee> copy = new HashSet<>(org);
 
-        //logger.debug("Original Collection {}", org);
-        //logger.debug("Copy of Collection  {}", copy );
+        System.out.println("Original Collection {}"+ org);
+        System.out.println("Copy of Collection  {}" +copy );
 
         Iterator<Employee> itr = org.iterator();
         while(itr.hasNext()){
             itr.next().setDesignation("staff");
         }
 
-       // logger.debug("Original Collection after modification  {}", org);
-        //logger.debug("Copy of Collection without modification {}", copy );
+        System.out.println("Original Collection after modification  {}"+org);
+        System.out.println("Copy of Collection without modification {}"+copy );
 
         // deep Cloning List in Java
 

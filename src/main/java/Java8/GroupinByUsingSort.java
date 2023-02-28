@@ -1,9 +1,6 @@
 package Java8;
 
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -14,20 +11,25 @@ public class GroupinByUsingSort {
                 Arrays.asList("apple", "apple", "banana",
                         "apple", "orange", "banana", "papaya");
 
-        Map<String, Long> result =
-                items.stream().collect(
-                        Collectors.groupingBy(
-                                Function.identity(), Collectors.counting()
-                        )
-                );
+        Set<String> numbersWithoutDups = items.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toSet());
+        System.out.println(numbersWithoutDups);
+        Map<String,Long> map =items.stream().sorted().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 
-        Map<String, Long> finalMap = new LinkedHashMap<>();
+        System.out.println(map);
 
-        //Sort a map and add to finalMap
-        result.entrySet().stream()
-                .sorted(Map.Entry.<String, Long>comparingByValue()
-                        .reversed()).forEachOrdered(e -> finalMap.put(e.getKey(), e.getValue()));
-
-        System.out.println(result);
+//        Set<String> result =
+//                items.stream().collect(
+//                        Collectors.groupingBy(
+//                                Function.identity(), Collectors.counting()
+//                        )
+//                ).keySet();
+//
+//        Set<String> finalMap = new LinkedHashSet<>();
+//
+//        //Sort a map and add to finalMap
+//        result.stream()
+//                .sorted().forEachOrdered(e -> finalMap.add);
+//
+//        System.out.println(result);
     }
 }

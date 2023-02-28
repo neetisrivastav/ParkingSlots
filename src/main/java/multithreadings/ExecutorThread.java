@@ -12,7 +12,7 @@ public class ExecutorThread {
             e.submit(new Thread());
             System.out.println("Shutdown executor");
             e.shutdown();
-            e.awaitTermination(5, TimeUnit.SECONDS);
+            e.awaitTermination(50, TimeUnit.SECONDS);
         } catch (InterruptedException ex) {
             System.err.println("tasks interrupted");
         } finally {
