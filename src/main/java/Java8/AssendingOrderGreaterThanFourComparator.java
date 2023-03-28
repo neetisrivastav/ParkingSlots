@@ -14,6 +14,8 @@ public class AssendingOrderGreaterThanFourComparator {
         list.stream().filter(t->t>4).sorted(Collections.reverseOrder()).distinct().forEach(System.out::println);
         list.stream().filter(t->t>4).sorted(Collections.reverseOrder()).distinct().max(Integer::compare).get();
         int sum = list.stream().filter(t -> t > 4).sorted(Collections.reverseOrder()).mapToInt(Integer::intValue).sum();
+        double sum1 = list.stream().filter(t -> t > 4).sorted(Collections.reverseOrder()).mapToInt(Integer::intValue).average().getAsDouble();
+
         //or
         list.stream().collect(Collectors.summingInt(Integer::intValue));
         //or
@@ -25,6 +27,7 @@ public class AssendingOrderGreaterThanFourComparator {
         int array[] = {2, 3, 7, 6, 8, -1, -10, 15};
         int min = Arrays.stream(array).filter(i -> i >= 0).min().orElse(0);
         System.out.println(min);
+
     }
 }
 

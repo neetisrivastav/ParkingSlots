@@ -20,7 +20,7 @@ class Person{
 
     private String name;
     private int id;
-    private List<String> address;
+   // private List<String> address;
 
     public Person(String name, int id) {
         this.name = name;
@@ -56,7 +56,7 @@ class Person{
         Person p1 = new Person("neeti",1);
         Person p2 = new Person("neeti",1);
 
-        System.out.println(p1.equals(p2));
+        System.out.println(p1.equals(p2));//true
         System.out.println(p1.hashCode()+" "+ p2.hashCode());
     }
 }

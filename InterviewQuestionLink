@@ -1,13 +1,14 @@
-Leet code problems: https://seanprashad.com/leetcode-patterns/
 Spring security: done
 Spring cloud: watch udemy lector’s (declarative client)
-Spring transaction and propogation
+Spring transaction and propogation:
 Web Reactive interaction: need
 Kafka:  overview and basic idea about it
 Java 8: watch video: https://www.youtube.com/watch?v=k7fNLXoVCYg
 Java 8: https://mkyong.com/category/java8/
 Java 8: https://www.interviewbit.com/java-8-interview-questions/
 Java 8: https://blog.devgenius.io/15-practical-exercises-help-you-master-java-stream-api-3f9c86b1cf82
+Java 8: https://dzone.com/articles/functional-interface-explained-in-detail-introduce#:~:text=In%20Java%208%2C%20there%20are,These%20are%20given%20below.
+StringJoiner, String.join(): java 8
 
 Java design pattern:
 https://www.digitalocean.com/community/tutorials/java-design-patterns-example-tutorial
@@ -27,6 +28,7 @@ ORM: Eager and lazy concept
 AWS: lambda,SQS, SNS, ECS, VPC, EC2, load balancer, autoscaling, cloud watch, parameter store, Api gateway, oath 2 for cognate user pool.
 https://www.interviewbit.com/aws-interview-questions/
 
+Java singelton vs spring singelton
 
 Junit, mockito, powermockito.
 
@@ -36,22 +38,25 @@ Spring based interview question, gradle vs maven
 https://www.interviewbit.com/spring-interview-questions/
 https://www.edureka.co/blog/interview-questions/spring-interview-questions/
 
-CAP theorem: https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/
+CAP theorem: https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/ :
 
 SOLID principle:
 
-Error handling in micro services: https://javatodev.com/microservices-exception-handling/
+Error handling in micro services: https://javatodev.com/microservices-exception-handling/ :
 
 Debug issue in micro services arch
 https://javatodev-501aa8.ingress-comporellon.ewp.live/microservices-exception-handling/
 
 Microservice design pattern
-https://www.edureka.co/blog/microservices-design-patterns
+https://www.edureka.co/blog/microservices-design-patterns:
 
 Internal working of dependency injection
 https://blogs.sap.com/2016/08/11/how-does-autowired-work-in-spring-framework/
 
-Imp feature after java 8 that developer should know: https://www.youtube.com/watch?v=P7SI9mLwiqw
+Imp feature after java 8 that developer should know:
+https://www.youtube.com/watch?v=P7SI9mLwiqw
+https://reflectoring.io/java-release-notes/
+https://www.codeburps.com/post/whats-new-in-java
 
 Most challenging work in recent 3-4 months: node js, typescript and shell scripting
 
@@ -90,6 +95,21 @@ Code need to practice
 
 SQL Based Question:
 
+join vs subquery
+composite index( two column combination= unique id) vs secondary index
+1- How to find duplicates in a table
+https://stackoverflow.com/questions/2594829/finding-duplicate-values-in-a-sql-table
+2- How to delete duplicates from a table
+3- Difference between union and union all
+4- Difference between rank,row_number and dense_rank
+5- Find records in a table which are not present in another table
+https://stackoverflow.com/questions/19363481/select-rows-which-are-not-present-in-other-table
+6- Find second highest salary employees in each department
+https://www.geeksforgeeks.org/find-nth-highest-salary-table/
+7- Find employees with salary more than their manager's salary
+8- Difference between inner and left join
+9- update a table and swap gender values.
+10- Number of records in output with different kinds of join.
 https://www.geeksforgeeks.org/find-nth-highest-salary-table/
 https://www.edureka.co/blog/interview-questions/sql-query-interview-questions
 join query
@@ -141,7 +161,10 @@ Elevator
 Parking lot
 Snake ladder game
 Chess game
-long URL to short URL
+long URL to short URL:
+https://medium.com/@sandeep4.verma/system-design-scalable-url-shortener-service-like-tinyurl-106f30f23a82
+HLD: https://www.youtube.com/playlist?list=PL6W8uoQQ2c63W58rpNFDwdrBnq5G3EfT7
+LLD: https://www.youtube.com/playlist?list=PL6W8uoQQ2c61X_9e6Net0WdYZidm7zooW
 
 
 Leetcode question
@@ -150,3 +173,7 @@ https://seanprashad.com/leetcode-patterns/
 https://leetcode.com/problem-list/top-100-liked-questions/
 https://leetcode.com/problem-list/top-interview-questions/
 https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
+
+
+diff b/w future vs completableFuture// practical example
+if t1 gives exception then need to call t2 thread

@@ -6,11 +6,14 @@ public class Deadlock{
         final String r2 = "java";
 
         Thread t1 = new Thread() {
-            public void run(){
-                synchronized(r1){
+            public void run() {
+                synchronized (r1) {
                     System.out.println("Thread 1: Locked r1");
-                    try{ Thread.sleep(100);} catch(Exception e) {}
-                    synchronized(r2){
+                    try {
+                        Thread.sleep(100);
+                    } catch (Exception e) {
+                    }
+                    synchronized (r2) {
                         System.out.println("Thread 1: Locked r2");
                     }
                 }
@@ -20,7 +23,9 @@ public class Deadlock{
             public void run(){
                 synchronized(r2){
                     System.out.println("Thread 2: Locked r2");
-                    try{ Thread.sleep(100);} catch(Exception e) {}
+                    try{
+                        Thread.sleep(100);
+                    } catch(Exception e) {}
                     synchronized(r1){
                         System.out.println("Thread 2: Locked r1");
                     }

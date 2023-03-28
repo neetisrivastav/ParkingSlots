@@ -45,7 +45,7 @@ public class WordCounting {
 //           map.put(chr, map.getOrDefault(chr,0)+1);
 //       }
 
-//        System.out.println(map.entrySet().stream().filter(x -> x.getValue() == 1).findFirst().get().getKey());
+     //  System.out.println(map.entrySet().stream().filter(x -> x.getValue() == 1).findFirst().get().getKey());
 //        for(Map.Entry<Character,Integer> map1: map.entrySet())
 //        {
 //            if(map1.getValue()==1)

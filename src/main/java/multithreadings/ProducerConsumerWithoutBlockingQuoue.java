@@ -1,114 +1,92 @@
 package multithreadings;
 
-import java.util.LinkedList;
-
-public class ProducerConsumerWithoutBlockingQuoue {
-    public static void main(String[] args)
-            throws InterruptedException
+class Company
+{
+    int n;
+    boolean f= false;
+    synchronized void produce_item(int n) throws Exception
     {
-        // Object of a class that has both produce()
-        // and consume() methods
-        final PC pc = new PC();
-
-        // Create producer thread
-        Thread t1 = new Thread(new Runnable() {
-            @Override
-            public void run()
-            {
-                try {
-                    pc.produce();
-                }
-                catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        // Create consumer thread
-        Thread t2 = new Thread(new Runnable() {
-            @Override
-            public void run()
-            {
-                try {
-                    pc.consume();
-                }
-                catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        // Start both threads
-        t1.start();
-        t2.start();
-
-        // t1 finishes before t2
-        t1.join();
-        t2.join();
+        if(f)
+        {
+            System.out.println("waiting before producer");
+            wait(); //
+            System.out.println("waiting after producer");
+        }
+        this.n = n;
+        System.out.println("produced" +this.n);
+        f = true;
+        notify();
     }
-
-    // This class has a list, producer (adds items to list
-    // and consumer (removes items).
-    public static class PC {
-
-        // Create a list shared by producer and consumer
-        // Size of list is 2.
-        LinkedList<Integer> list = new LinkedList<>();
-        int capacity = 2;
-
-        // Function called by producer thread
-        public void produce() throws InterruptedException
+    synchronized public int consume_item() throws Exception
+    {
+        if(!f)
         {
-            int value = 0;
-            while (true) {
-                synchronized (this)
-                {
-                    // producer thread waits while list
-                    // is full
-                    while (list.size() == capacity)
-                        wait();
+            System.out.println("waiting before consumer");
+            wait();
+            System.out.println("waiting after consumer");
+        }
+        System.out.println("consumed"+this.n);
+        f=false;
+        notify();
+        return this.n;
+    }
+}
 
-                    System.out.println("Producer produced-"
-                            + value);
+class Producer extends Thread
+{
+    Company c;
 
-                    // to insert the jobs in the list
-                    list.add(value++);
+    Producer(Company c)
+    {
+        this.c = c;
+    }
+    public void run()
+    {
+        int i = 1;
+        while (true)
+        {
+            try
+            {
+                this.c.produce_item(i);
+                Thread.sleep(10000);
+            }
+            catch (Exception e){
 
-                    // notifies the consumer thread that
-                    // now it can start consuming
-                    notify();
+            }
+            i++;
+        }
+    }
+}
 
-                    // makes the working of program easier
-                    // to  understand
-                    Thread.sleep(1000);
-                }
+class Consumer extends Thread
+{
+    Company c;
+    Consumer(Company c)
+    {
+        this.c = c;
+    }
+    public void run()
+    {
+        while(true)
+        {
+            try {
+                this.c.consume_item();
+                Thread.sleep(1000);
+    ;
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
         }
+    }
+}
 
-        // Function called by consumer thread
-        public void consume() throws InterruptedException
-        {
-            while (true) {
-                synchronized (this)
-                {
-                    // consumer thread waits while list
-                    // is empty
-                    while (list.size() == 0)
-                        wait();
-
-                    // to retrieve the first job in the list
-                    int val = list.removeFirst();
-
-                    System.out.println("Consumer consumed-"
-                            + val);
-
-                    // Wake up producer thread
-                    notify();
-
-                    // and sleep
-                    Thread.sleep(1000);
-                }
-            }
-        }
+class Mains
+{
+    public static void main(String[] args) {
+        Company comp = new Company();
+        Producer p = new Producer(comp);
+        Consumer c = new Consumer(comp);
+        p.start();
+        c.start();
     }
 }
